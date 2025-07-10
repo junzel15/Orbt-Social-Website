@@ -8,15 +8,15 @@ body {
   color: #222;
 }
 
-.logo img {
-  height: 40px;
-  width: auto;
-}
-
 header {
   background: #fff;
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
 }
 
 .navbar {
@@ -26,11 +26,6 @@ header {
   padding: 1rem 2rem;
   background: #fff;
   position: relative;
-}
-
-.logo img {
-  height: 40px;
-  width: auto;
 }
 
 .nav-links {
@@ -71,10 +66,11 @@ header {
     padding: 1rem;
   }
   .logo {
-    margin-bottom: 0.5rem;
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    margin-bottom: 0.5rem;
   }
   .nav-links {
     width: 100%;
