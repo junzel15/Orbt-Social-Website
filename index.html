@@ -3,136 +3,278 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orbt - Home</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" type="image/png" href="images/bar-logo.png" />
+
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
+    <title>Orbt Social</title>
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="images/orbt-logo.png" alt="Orbt Logo" />
-        </div>
 
-        <ul class="nav-links">
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/how-it-works">How it works?</a></li>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="images/orbtlogo.png" alt="Orbt Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="hero">
-      <img src="images/hero-image.png" alt="Hero background" class="hero-img" />
-      <div class="hero-overlay">
-        <h1>
-          <span class="hero-line">A NEW WAY TO</span><br />
-          <span class="hero-em">SOCIALIZE</span>
-        </h1>
-        <p class="hero-desc">your city, your people, and</p>
-        <p class="hero-desc">experiences that matter.</p>
-        <p class="hero-cta">
-          <strong>Boston</strong> | Coming soon to a city near you
-        </p>
+      <h1>Meet new friends through curated experiences</h1>
+      <p>Meet once. Build friendships that last.</p>
+      <h3 class="hero-subtext">Join your first hangout!</h3>
+      <button class="btn-primary">Book Now</button>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+      <div class="carousel">
+        <div class="slides">
+          <div class="slide intro">
+            <h2>HOW DOES IT WORK?</h2>
+            <p>We’re glad you asked.</p>
+          </div>
+
+          <div class="slide">
+            <div class="text">
+              <h3>Sign Up. Join Orbt.</h3>
+              <p>Join a network built for genuine, in-person connection.</p>
+            </div>
+            <div class="image">
+              <img src="images/image7.png" alt="Sign up screen" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="text">
+              <h3>Tell us what matters</h3>
+              <p>
+                Share us your taste and interest so we learn your energy and
+                style, bringing the right people together.
+              </p>
+            </div>
+            <div class="image">
+              <img src="images/image12.png" alt="Preference selection" />
+            </div>
+          </div>
+
+          <div class="slide choose-experience">
+            <div class="image multiple">
+              <div class="exp-card card1">
+                <img src="images/image6.png" alt="Brunch experience" />
+                <span class="label">Brunch</span>
+              </div>
+              <div class="exp-card card2">
+                <img src="images/image5.png" alt="Run and Eat experience" />
+                <span class="label">Run & Eat</span>
+              </div>
+              <div class="exp-card card3">
+                <img src="images/image10.png" alt="Pub Crawl experience" />
+                <span class="label">Pub Crawls</span>
+              </div>
+            </div>
+
+            <div class="text">
+              <h3>Choose your experience</h3>
+              <p>
+                Whether you’re here to make new friends, try something fun, or
+                just enjoy good company, pick from curated experiences like
+                <strong
+                  >rooftop parties, hidden omakase, and coffee walks.</strong
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="text">
+              <h3>We handle the details</h3>
+              <p>
+                We curate every detail so the experience feels natural and
+                effortless.
+                <strong>Just show up and connect.</strong>
+              </p>
+            </div>
+            <div class="image">
+              <img src="images/image8.png" alt="Event setup" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="text">
+              <h3>Use Orbt Blend</h3>
+              <p>
+                Curious about someone? Orbt Blend helps you see what you share
+                and gives you icebreakers to start real conversations naturally.
+              </p>
+            </div>
+            <div class="image">
+              <img src="images/image11.png" alt="Orbt blend feature" />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="text">
+              <h3>Keep it going. Build your new circle.</h3>
+              <p>
+                Keep in touch with the people you click with.
+                <strong>Join new plans or make your own</strong>
+                from karaoke nights to weekend hikes.
+              </p>
+            </div>
+            <div class="image">
+              <img src="images/image3.png" alt="Group of friends" />
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="dots"></div>
       </div>
     </section>
 
-    <section class="devices">
-      <img src="images/app-image.png" alt="App devices" />
+    <section class="why-orbt">
+      <h2>Why Orbt?</h2>
 
-      <div class="store-icons">
-        <img src="images/Google-icon.png" alt="Get it on Google Play" />
-        <img src="images/Apple-icon.png" alt="Download on the App Store" />
-      </div>
-    </section>
-
-    <section class="features">
-      <h2>We don't match you with faces on screens</h2>
-      <p class="features-subtext">
-        We match you with real people for real-time, in-person experiences.
-      </p>
-      <div class="categories">
-        <div class="category-box">
-          <img src="images/dining.png" alt="Dining" />
-          <p>Dining</p>
-        </div>
-        <div class="category-box">
-          <img src="images/bars.png" alt="Bars" />
-          <p>Bars</p>
-        </div>
-        <div class="category-box">
-          <img src="images/experiences.png" alt="Experiences" />
-          <p>Experiences</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="connections">
-      <div class="connections-container">
-        <img
-          src="images/connections.png"
-          alt="People hugging"
-          class="connections-img"
-        />
-        <div class="connections-text">
-          <h2>Build the Lasting<br />Connections</h2>
+      <div class="feature">
+        <div class="text">
+          <h3>Group Match Intelligence</h3>
+          <p><strong>U.S. Patent Application No. 63/860497</strong></p>
           <p>
-            Forge meaningful connections that grow your community and enrich
-            your life beyond every event.
+            Built on science. Designed with psychology and engineering. So
+            you're matched with people you'll actually click with.
           </p>
-          <button>About Orbt</button>
+        </div>
+        <div class="image">
+          <img src="images/image2.png" alt="Group match feature" />
+        </div>
+      </div>
+
+      <div class="feature reverse">
+        <div class="text">
+          <h3>More Than A Profile</h3>
+          <p><strong>U.S. Patent Application No. 63/820237</strong></p>
+          <p>
+            People evolve. We do too. We learn from every experience, so
+            connections feel effortless and real.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/image1.png" alt="Profile evolution feature" />
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="text">
+          <h3>Fresh Experiences</h3>
+          <p>
+            From hidden omakase to rooftop parties.
+            <strong>Every event</strong> is curated through
+            <strong>data, feedback, and local insight.</strong> We’re always
+            finding what’s new, so you never have to.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/image9.png" alt="Unique curated experiences" />
+        </div>
+      </div>
+
+      <div class="feature reverse">
+        <div class="text">
+          <h3>From First Hang To Crew</h3>
+          <p>
+            <strong>Not a one-off dinner.</strong> We keep your group alive,
+            helping you stay in touch with the people who matter, and grow
+            together beyond the night.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/image4.png" alt="Friends becoming a crew" />
         </div>
       </div>
     </section>
 
-    <section class="events">
-      <div class="events-container">
-        <div class="events-text">
-          <h2>Curated Events.<br />Real Connections.</h2>
-          <p>It’s better on the app.</p>
-        </div>
-        <img src="images/events.png" alt="Event preview" class="events-img" />
+    <section class="app-download">
+      <div class="store-buttons">
+        <a href="#"
+          ><img src="images/googleplay.png" alt="Get it on Google Play"
+        /></a>
+        <a href="#"
+          ><img src="images/appstore.png" alt="Download on the App Store"
+        /></a>
       </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-store-buttons">
-        <img src="images/Google-icon.png" alt="Google Play" />
-        <img src="images/Apple-icon.png" alt="App Store" />
-      </div>
-
-      <p class="footer-legal-text">
+      <p class="store-text">
         Apple and the Apple logo are trademarks of Apple Inc.<br />
         Google Play is a trademark of Google LLC.
       </p>
+    </section>
 
+    <footer class="footer">
       <div class="footer-links">
-        <div class="footer-primary-links">
-          <a href="#">FAQ</a>
-          <a href="#">Events</a>
-          <a href="#">Contact us</a>
-          <a href="#">Guidelines</a>
-        </div>
-
-        <div class="footer-secondary-links">
-          <a href="/TermsAndCondition">Terms and conditions</a>
-          <a href="/privacypolicy">Privacy policy</a>
-          <a href="#">Careers</a>
-          <a href="#">Investors</a>
-        </div>
-      </div>
-
-      <div class="footer-social-icons">
-        <img src="images/facebook.png" alt="Facebook" />
-        <img src="images/twitter.png" alt="X" />
-        <img src="images/instagram.png" alt="Instagram" />
-        <img src="images/linkin.png" alt="LinkedIn" />
-        <img src="images/youtube.png" alt="YouTube" />
+        <a href="#">FAQ</a>
+        <a href="TermsAndCondition">Terms and Conditions</a>
+        <a href="#">Contact us</a>
+        <a href="privacypolicy">Privacy Policy</a>
+        <a href="#">Investors</a>
       </div>
     </footer>
+
+    <script>
+      const slides = document.querySelector(".slides");
+      const slideCount = document.querySelectorAll(".slide").length;
+      const dotsContainer = document.querySelector(".dots");
+      let index = 0;
+
+      for (let i = 0; i < slideCount; i++) {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          index = i;
+          updateSlide();
+        });
+        dotsContainer.appendChild(dot);
+      }
+
+      const dots = document.querySelectorAll(".dot");
+
+      document.querySelector(".next").addEventListener("click", () => {
+        index = (index + 1) % slideCount;
+        updateSlide();
+      });
+
+      document.querySelector(".prev").addEventListener("click", () => {
+        index = (index - 1 + slideCount) % slideCount;
+        updateSlide();
+      });
+
+      function updateSlide() {
+        slides.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+      }
+    </script>
   </body>
 </html>
