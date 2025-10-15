@@ -55,12 +55,12 @@
           </div>
 
           <div class="slide">
+            <div class="image">
+              <img src="images/image7.png" alt="Sign up screen" />
+            </div>
             <div class="text">
               <h3>Sign Up. Join Orbt.</h3>
               <p>Join a network built for genuine, in-person connection.</p>
-            </div>
-            <div class="image">
-              <img src="images/image7.png" alt="Sign up screen" />
             </div>
           </div>
 
@@ -123,9 +123,13 @@
             <div class="text">
               <h3>Use Orbt Blend</h3>
               <p>
-                Curious about someone? Orbt Blend helps you see what you share
-                and gives you icebreakers to start real conversations naturally.
+                Curious about someone? <strong>Orbt Blend</strong> helps you see
+                what both of you share and gives you icebreakers to start real
+                conversations naturally.
               </p>
+              <div class="patent-pill">
+                U.S. Patent Application No. 63/320237
+              </div>
             </div>
             <div class="image">
               <img src="images/image11.png" alt="Orbt blend feature" />
@@ -233,12 +237,19 @@
     </section>
 
     <footer class="footer">
-      <div class="footer-links">
-        <a href="#">FAQ</a>
-        <a href="TermsAndCondition">Terms and Conditions</a>
-        <a href="#">Contact us</a>
-        <a href="privacypolicy">Privacy Policy</a>
-        <a href="#">Investors</a>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">FAQ</a>
+          <a href="TermsAndCondition">Terms and Conditions</a>
+          <a href="#">Contact us</a>
+          <a href="privacypolicy">Privacy Policy</a>
+          <a href="#">Investors</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </footer>
 
@@ -246,6 +257,8 @@
       const slides = document.querySelector(".slides");
       const slideCount = document.querySelectorAll(".slide").length;
       const dotsContainer = document.querySelector(".dots");
+      const prevButton = document.querySelector(".prev");
+      const nextButton = document.querySelector(".next");
       let index = 0;
 
       for (let i = 0; i < slideCount; i++) {
@@ -261,12 +274,12 @@
 
       const dots = document.querySelectorAll(".dot");
 
-      document.querySelector(".next").addEventListener("click", () => {
+      nextButton.addEventListener("click", () => {
         index = (index + 1) % slideCount;
         updateSlide();
       });
 
-      document.querySelector(".prev").addEventListener("click", () => {
+      prevButton.addEventListener("click", () => {
         index = (index - 1 + slideCount) % slideCount;
         updateSlide();
       });
@@ -274,7 +287,15 @@
       function updateSlide() {
         slides.style.transform = `translateX(-${index * 100}%)`;
         dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+
+        if (index === 0) {
+          prevButton.style.display = "flex";
+        } else {
+          prevButton.style.display = "flex";
+        }
       }
+
+      updateSlide();
     </script>
   </body>
 </html>
