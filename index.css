@@ -338,20 +338,44 @@ nav a:hover {
 }
 
 .controls button {
-  background: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  background-color: #ffffff;
   color: #6b00ff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
 .controls button:hover {
-  background: #6b00ff;
+  background-color: #6b00ff;
   color: #fff;
+  transform: scale(1.05);
+}
+
+.controls {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .controls button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
 }
 
 .dots {
@@ -521,6 +545,29 @@ nav a:hover {
     font-size: 15px;
     color: #222;
     margin-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-orbt .feature {
+    gap: 0.2rem !important;
+    margin-bottom: 1.4rem !important;
+  }
+
+  .why-orbt .feature .text h3 {
+    font-size: 20px !important;
+    margin-bottom: 0.1rem !important;
+  }
+
+  .why-orbt .feature .text p {
+    font-size: 16px !important;
+    margin-top: 0.1rem !important;
+    margin-bottom: 0.1rem !important;
+  }
+
+  .why-orbt .feature .image img {
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.2rem !important;
   }
 }
 
