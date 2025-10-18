@@ -29,6 +29,19 @@
     />
 
     <link rel="stylesheet" href="index.css" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EE7B07YQSM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-EE78D7Y0SM");
+    </script>
   </head>
 
   <body>
@@ -48,7 +61,12 @@
       <h1>Meet new friends through curated experiences</h1>
       <p>Meet once. Build friendships that last.</p>
       <h3 class="hero-subtext">Join your first hangout!</h3>
-      <button class="btn-primary">Book Now</button>
+      <button
+        class="btn-primary"
+        onclick="window.open('https://forms.gle/ZsLRuKyq4zWmV6h69', '_blank')"
+      >
+        Join Us
+      </button>
     </section>
 
     <section id="how-it-works" class="how-it-works">
@@ -232,12 +250,12 @@
 
     <section class="app-download">
       <div class="store-buttons">
-        <a href="#"
-          ><img src="images/googleplay.png" alt="Get it on Google Play"
-        /></a>
-        <a href="#"
-          ><img src="images/appstore.png" alt="Download on the App Store"
-        /></a>
+        <a href="https://forms.gle/ZsLRuKyq4zWmV6h69" target="_blank">
+          <img src="images/googleplay.png" alt="Get it on Google Play" />
+        </a>
+        <a href="https://forms.gle/ZsLRuKyq4zWmV6h69" target="_blank">
+          <img src="images/appstore.png" alt="Download on the App Store" />
+        </a>
       </div>
       <p class="store-text">
         Apple and the Apple logo are trademarks of Apple Inc.<br />
@@ -280,6 +298,23 @@
         });
         dotsContainer.appendChild(dot);
       }
+
+      const controlButtons = document.querySelectorAll(".controls button");
+
+      controlButtons.forEach((btn) => {
+        btn.addEventListener("touchstart", () => {
+          btn.classList.add("tapped");
+        });
+
+        btn.addEventListener("touchend", () => {
+          setTimeout(() => btn.classList.remove("tapped"), 150);
+        });
+
+        btn.addEventListener("mouseenter", () => btn.classList.add("tapped"));
+        btn.addEventListener("mouseleave", () =>
+          btn.classList.remove("tapped")
+        );
+      });
 
       const dots = document.querySelectorAll(".dot");
 
