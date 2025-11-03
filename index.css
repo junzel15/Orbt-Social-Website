@@ -586,6 +586,23 @@ nav a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .why-orbt .feature .text p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 90%;
+    margin: 0.8rem auto 0.8rem;
+    word-break: keep-all;
+  }
+
+  .why-orbt .feature .text p strong {
+    display: inline;
+    font-weight: 600;
+    color: #222;
+  }
+}
+
 .slide.choose-experience {
   display: flex;
   align-items: center;
@@ -701,19 +718,19 @@ nav a:hover {
   position: absolute;
   top: 20px;
   left: 250px;
-  background: rgba(0, 0, 0, 0.8);
+  background: #2c2c34;
   color: #fff;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.3px;
-  padding: 8px 12px;
-  border-radius: 20px;
+  padding: 5px 8px;
+  border-radius: 8px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
   white-space: nowrap;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.75);
 }
 
 .slide.choose-experience .card1 {
@@ -769,14 +786,14 @@ nav a:hover {
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.3px;
-    padding: 6px 10px;
-    border-radius: 20px;
+    padding: 5px 8px;
+    border-radius: 8px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
     white-space: nowrap;
     text-align: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.75);
     z-index: 10;
   }
 
