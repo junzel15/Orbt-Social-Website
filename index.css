@@ -723,14 +723,17 @@ nav a:hover {
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.3px;
-  padding: 5px 8px;
+  width: 35px;
+  height: 131px;
   border-radius: 8px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
 .slide.choose-experience .card1 {
@@ -778,22 +781,24 @@ nav a:hover {
 
 @media (max-width: 900px) {
   .slide.choose-experience .exp-card .label {
-    position: absolute;
     top: 8px;
-    left: 120px;
+    left: 140px;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.3px;
-    padding: 5px 8px;
+    width: 25px;
+    height: 90px;
     border-radius: 8px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
     z-index: 10;
   }
 
